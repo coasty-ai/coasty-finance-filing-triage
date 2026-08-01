@@ -5,7 +5,7 @@
   "niche": "SEC filing full-text triage",
   "target": "www.sec.gov",
   "publicTarget": true,
-  "task": "TODO",
+  "task": "Go to https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany and use EDGAR's company search to find the filer MICROSOFT CORP, then narrow the results to annual reports on form 10-K. Working only from the first page of results EDGAR returns, report three things: how many filings are listed on that page, the exact form type and the filing date of the most recent one, and that filing's accession number copied exactly as EDGAR displays it. Report those three values and stop — do not open any other filer and do not page past the first page of results.",
   "expectedSteps": 18,
   "maxSteps": 24,
   "capCents": 121,
