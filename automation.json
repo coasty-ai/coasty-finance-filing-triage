@@ -14,5 +14,66 @@
   "machine": {
     "os_type": "linux",
     "desktop_enabled": true
+  },
+  "portal": {
+    "site": "EDGAR  |  U.S. Securities and Exchange Commission",
+    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MICROSOFT+CORP&type=10-K",
+    "nav": [
+      "Company Filings",
+      "Full-Text Search",
+      "Forms List",
+      "About EDGAR",
+      "Help"
+    ],
+    "label": "Company name",
+    "query": "MICROSOFT CORP",
+    "hint": "Search a filer, then narrow the results by form type (10-K).",
+    "columns": [
+      "Description",
+      "Form Type",
+      "Filing Date",
+      "Accession No."
+    ],
+    "total": "6",
+    "rows": [
+      [
+        "Annual report (period 2025-06-30)",
+        "10-K",
+        "2025-07-30",
+        "0000950170-25-100235"
+      ],
+      [
+        "Annual report (period 2024-06-30)",
+        "10-K",
+        "2024-07-30",
+        "0000950170-24-087843"
+      ],
+      [
+        "Annual report (period 2023-06-30)",
+        "10-K",
+        "2023-07-27",
+        "0000950170-23-035122"
+      ],
+      [
+        "Annual report (period 2022-06-30)",
+        "10-K",
+        "2022-07-28",
+        "0001564590-22-026876"
+      ],
+      [
+        "Annual report (period 2021-06-30)",
+        "10-K",
+        "2021-07-29",
+        "0001564590-21-039151"
+      ],
+      [
+        "Annual report (period 2020-06-30)",
+        "10-K",
+        "2020-07-30",
+        "0001564590-20-034944"
+      ]
+    ],
+    "answerRow": 0,
+    "answer": "6 10-K filings on page 1; latest 10-K filed 2025-07-30, acc-no 0000950170-25-100235"
   }
 }
