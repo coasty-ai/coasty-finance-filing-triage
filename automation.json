@@ -16,64 +16,134 @@
     "desktop_enabled": true
   },
   "portal": {
-    "site": "EDGAR  |  U.S. Securities and Exchange Commission",
-    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MICROSOFT+CORP&type=10-K",
+    "theme": {
+      "bar": [27, 54, 93],
+      "accent": [0, 113, 188]
+    },
+    "site": "U.S. SECURITIES AND EXCHANGE COMMISSION",
+    "sub": "EDGAR - Electronic Data Gathering, Analysis, and Retrieval",
     "nav": [
+      "EDGAR Home",
       "Company Filings",
       "Full-Text Search",
       "Forms List",
-      "About EDGAR",
+      "Filing Status",
       "Help"
     ],
-    "label": "Company name",
-    "query": "MICROSOFT CORP",
-    "hint": "Search a filer, then narrow the results by form type (10-K).",
-    "columns": [
-      "Description",
-      "Form Type",
-      "Filing Date",
-      "Accession No."
-    ],
-    "total": "6",
-    "rows": [
-      [
-        "Annual report (period 2025-06-30)",
-        "10-K",
-        "2025-07-30",
-        "0000950170-25-100235"
-      ],
-      [
-        "Annual report (period 2024-06-30)",
-        "10-K",
-        "2024-07-30",
-        "0000950170-24-087843"
-      ],
-      [
-        "Annual report (period 2023-06-30)",
-        "10-K",
-        "2023-07-27",
-        "0000950170-23-035122"
-      ],
-      [
-        "Annual report (period 2022-06-30)",
-        "10-K",
-        "2022-07-28",
-        "0001564590-22-026876"
-      ],
-      [
-        "Annual report (period 2021-06-30)",
-        "10-K",
-        "2021-07-29",
-        "0001564590-21-039151"
-      ],
-      [
-        "Annual report (period 2020-06-30)",
-        "10-K",
-        "2020-07-30",
-        "0001564590-20-034944"
-      ]
-    ],
-    "answerRow": 0,
-    "answer": "6 10-K filings on page 1; latest 10-K filed 2025-07-30, acc-no 0000950170-25-100235"
+    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&type=10-K&count=40",
+    "answer": "Page 1 lists 6 filings; most recent is form 10-K filed 2025-07-30, Acc-no 0000950170-25-100235",
+    "scenes": [
+      {
+        "kind": "load",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany",
+        "text": "Loading EDGAR company search...",
+        "status": "Opening the EDGAR company search on www.sec.gov",
+        "steps": 1
+      },
+      {
+        "kind": "search",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany",
+        "label": "Company name",
+        "query": "MICROSOFT CORP",
+        "hint": "Enter a company name, ticker symbol or CIK number, then Search.",
+        "button": "Search",
+        "status": "Entering the filer name MICROSOFT CORP into the EDGAR company search",
+        "steps": 3
+      },
+      {
+        "kind": "fields",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&count=40",
+        "title": "EDGAR Search Results",
+        "cols": 2,
+        "fields": [
+          ["Company name", "MICROSOFT CORP"],
+          ["CIK number", "0000789019"],
+          ["Ticker", "MSFT"],
+          ["Exchange", "NASDAQ"],
+          ["SIC code", "7372"],
+          ["Industry", "Prepackaged Software"],
+          ["State location", "WA"],
+          ["State of incorp.", "WA"],
+          ["Fiscal year end", "0630"],
+          ["File number", "001-37845"],
+          ["Business address", "REDMOND, WA 98052"],
+          ["Phone", "425-882-8080"]
+        ],
+        "status": "Confirming the filer is MICROSOFT CORP before narrowing by form type",
+        "steps": 3
+      },
+      {
+        "kind": "search",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&count=40",
+        "label": "Filing Type",
+        "query": "10-K",
+        "hint": "Filter CIK 0000789019 to a single form type, then Search.",
+        "button": "Search",
+        "status": "Narrowing MICROSOFT CORP's filings to annual reports on form 10-K",
+        "steps": 3
+      },
+      {
+        "kind": "table",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&type=10-K&count=40",
+        "label": "Filing Type",
+        "query": "10-K",
+        "button": "Search",
+        "columns": [
+          "Filings",
+          "Format",
+          "Description",
+          "Filing Date",
+          "File/Film Number"
+        ],
+        "rows": [
+          [
+            "10-K",
+            "Documents",
+            "Annual report Acc-no: 0000950170-25-100235",
+            "2025-07-30",
+            "001-37845 251167482"
+          ],
+          [
+            "10-K",
+            "Documents",
+            "Annual report Acc-no: 0000950170-24-087843",
+            "2024-07-30",
+            "001-37845 241157440"
+          ],
+          [
+            "10-K",
+            "Documents",
+            "Annual report Acc-no: 0000950170-23-035122",
+            "2023-07-27",
+            "001-37845 231111744"
+          ],
+          [
+            "10-K",
+            "Documents",
+            "Annual report Acc-no: 0001564590-22-026876",
+            "2022-07-28",
+            "001-37845 221109882"
+          ],
+          [
+            "10-K",
+            "Documents",
+            "Annual report Acc-no: 0001564590-21-039151",
+            "2021-07-29",
+            "001-37845 211123640"
+          ],
+          [
+            "10-K",
+            "Documents",
+            "Annual report Acc-no: 0001564590-20-034944",
+            "2020-07-30",
+            "001-37845 201060232"
+          ]
+        ],
+        "answerRow": 0,
+        "note": "Items 1 - 6 of 6   |   Page 1 of 1   |   Form type 10-K",
+        "status": "Counting the 10-K filings listed on page 1 of the results",
+        "steps": 5
+      }
+    ]
   }
 }
