@@ -1,0 +1,18 @@
+{
+  "slug": "finance-filing-triage",
+  "title": "Finance — SEC filing full-text triage",
+  "vertical": "Financial services",
+  "niche": "SEC filing full-text triage",
+  "target": "www.sec.gov",
+  "publicTarget": true,
+  "task": "TODO",
+  "expectedSteps": 18,
+  "maxSteps": 24,
+  "capCents": 121,
+  "cuaVersion": "v5",
+  "deadlineSeconds": 900,
+  "machine": {
+    "os_type": "linux",
+    "desktop_enabled": true
+  }
+}
