@@ -1,0 +1,26 @@
+{
+  "kind": "real-capture",
+  "note": "Every frame is a screenshot taken by a real browser driving real software during a real agent run.",
+  "software": "EDGAR-FTS 3270 filing retrieval terminal",
+  "task": "You are covering the filings desk on this EDGAR-FTS 3270 retrieval terminal. Sign on with user ID FTS042 (any password is accepted in this region). From the FTS main menu open the COMPANY FILING INQUIRY function. Run an inquiry for ticker HLBN with FORM TYPE set to ALL and the filed-date range 2025-01-01 through 2025-12-31, leaving the sort sequence as pre-filled. From the result list work out which single submission is the LARGEST by SIZE (KB), then display that submission's detail record. Report: (1) how many filings the inquiry returned in total, (2) how many of the returned filings are 10-Q filings, (3) the largest submission's FORM TYPE, ACCESSION NUMBER, FILED date and SIZE (KB), and (4) from the submission detail screen its FILE NUMBER, FILM NUMBER, ACCEPTED timestamp and DOCUMENTS count. Quote every value exactly as the screens display it.",
+  "model": "gpt-5.2",
+  "captured_at": "2026-08-02T01:11:17.800Z",
+  "status": "succeeded",
+  "answer": "(1) Total filings returned: \"012 HITS\"\n(2) Number of 10-Q filings: \"10-Q=3\"\n(3) Largest submission (by SIZE (KB)):\n- FORM TYPE: \"S-1\"\n- ACCESSION NUMBER: \"0001841200-25-000057\"\n- FILED: \"2025-06-18\"\n- SIZE (KB): \"8,412\"\n(4) From the submission detail screen:\n- FILE NUMBER: \"333-274018\"\n- FILM NUMBER: \"25790612\"\n- ACCEPTED timestamp: \"2025-06-18 17:42:19\"\n- DOCUMENTS count: \"033\"",
+  "steps_taken": 7,
+  "frames_rendered": 7,
+  "frames_captured": 7,
+  "duplicate_frames_dropped": 0,
+  "model_calls": 7,
+  "approx_usd": 0.0268,
+  "video_seconds": 20.68,
+  "frame_sha256": [
+    "dd3ef7e2540820e635309733dcae119bd6f92db734ff9f02c8537fc69dfbb96e",
+    "1bfc7e3f7ce6baf29cf4e7de611d8374394d700b5f506eb96b7011e59911e24c",
+    "8772f8df5a09a00302bd3cc6b1cff0ecd08164dfdbfcf99440338eeca316533c",
+    "c356e81d2ac8b805128307b1265c54fa78b3133f275a98132a16ce1d5abf5a1d",
+    "9c15797672c781c441243e6b10640399943630710ffb15ca5ff5bb0785faf8a2",
+    "bb5ca948249e0aa828b0e742dd15d95bbf065f8668ef2db7e5b71510b1586a62",
+    "9c15797672c781c441243e6b10640399943630710ffb15ca5ff5bb0785faf8a2"
+  ]
+}
