@@ -3,9 +3,9 @@
   "title": "Finance — SEC filing full-text triage",
   "vertical": "Financial services",
   "niche": "SEC filing full-text triage",
-  "target": "www.sec.gov",
-  "publicTarget": true,
-  "task": "Go to https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany and use EDGAR's company search to find the filer MICROSOFT CORP, then narrow the results to annual reports on form 10-K. Working only from the first page of results EDGAR returns, report three things: how many filings are listed on that page, the exact form type and the filing date of the most recent one, and that filing's accession number copied exactly as EDGAR displays it. Report those three values and stop — do not open any other filer and do not page past the first page of results.",
+  "target": "EDGAR-FTS",
+  "publicTarget": false,
+  "task": "You are covering the filings desk on this EDGAR-FTS 3270 retrieval terminal. Sign on with user ID FTS042 (any password is accepted in this region). From the FTS main menu open the COMPANY FILING INQUIRY function. Run an inquiry for ticker HLBN with FORM TYPE set to ALL and the filed-date range 2025-01-01 through 2025-12-31, leaving the sort sequence as pre-filled. From the result list work out which single submission is the LARGEST by SIZE (KB), then display that submission's detail record. Report: (1) how many filings the inquiry returned in total, (2) how many of the returned filings are 10-Q filings, (3) the largest submission's FORM TYPE, ACCESSION NUMBER, FILED date and SIZE (KB), and (4) from the submission detail screen its FILE NUMBER, FILM NUMBER, ACCEPTED timestamp and DOCUMENTS count. Quote every value exactly as the screens display it.",
   "expectedSteps": 18,
   "maxSteps": 24,
   "capCents": 121,
@@ -17,8 +17,16 @@
   },
   "portal": {
     "theme": {
-      "bar": [27, 54, 93],
-      "accent": [0, 113, 188]
+      "bar": [
+        27,
+        54,
+        93
+      ],
+      "accent": [
+        0,
+        113,
+        188
+      ]
     },
     "site": "U.S. SECURITIES AND EXCHANGE COMMISSION",
     "sub": "EDGAR - Electronic Data Gathering, Analysis, and Retrieval",
@@ -56,18 +64,54 @@
         "title": "EDGAR Search Results",
         "cols": 2,
         "fields": [
-          ["Company name", "MICROSOFT CORP"],
-          ["CIK number", "0000789019"],
-          ["Ticker", "MSFT"],
-          ["Exchange", "NASDAQ"],
-          ["SIC code", "7372"],
-          ["Industry", "Prepackaged Software"],
-          ["State location", "WA"],
-          ["State of incorp.", "WA"],
-          ["Fiscal year end", "0630"],
-          ["File number", "001-37845"],
-          ["Business address", "REDMOND, WA 98052"],
-          ["Phone", "425-882-8080"]
+          [
+            "Company name",
+            "MICROSOFT CORP"
+          ],
+          [
+            "CIK number",
+            "0000789019"
+          ],
+          [
+            "Ticker",
+            "MSFT"
+          ],
+          [
+            "Exchange",
+            "NASDAQ"
+          ],
+          [
+            "SIC code",
+            "7372"
+          ],
+          [
+            "Industry",
+            "Prepackaged Software"
+          ],
+          [
+            "State location",
+            "WA"
+          ],
+          [
+            "State of incorp.",
+            "WA"
+          ],
+          [
+            "Fiscal year end",
+            "0630"
+          ],
+          [
+            "File number",
+            "001-37845"
+          ],
+          [
+            "Business address",
+            "REDMOND, WA 98052"
+          ],
+          [
+            "Phone",
+            "425-882-8080"
+          ]
         ],
         "status": "Confirming the filer is MICROSOFT CORP before narrowing by form type",
         "steps": 3
@@ -145,5 +189,6 @@
         "steps": 5
       }
     ]
-  }
+  },
+  "software": "EDGAR-FTS 3270 filing retrieval terminal"
 }
